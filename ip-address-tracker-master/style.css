@@ -1,0 +1,116 @@
+:root {
+ --dark-gray: hsl(0, 0%, 59%);
+ --very-dark-gray: hsl(0, 0%, 17%);
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", system-ui;
+    font-style: normal;
+}
+
+.container {
+    width: 100%;
+    position: relative;
+}
+
+header {
+    position: relative;
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(/ip-address-tracker-master/images/pattern-bg-desktop.png);
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+}
+
+form {
+    width: 300px;
+    height: 40px;
+    display: flex;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+form input {
+    height: 100%;
+    width: 85%;
+    border: none;
+    padding-left: 10px;
+}
+
+form button {
+    background: var(--very-dark-gray);
+    width: 15%;
+    height: 100%;
+    border: none;
+    cursor: pointer;
+}
+
+
+.ip-informations {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+    position: absolute;
+    top: 32%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: 75px;
+    height: 150px;
+    padding: 20px;
+    border-radius: 15px;
+    background: white;
+    gap: 5px;
+    z-index: 99;
+}
+
+.ip-informations_div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 25%;
+}
+.ip-informations_div div{
+    height: 20%;
+    display: flex;
+}
+.ip-informations_title {
+    font-size: 12px;
+    color: var(--dark-gray);
+}
+.ip-informations_text {
+    font-size: 20px;
+    color: var(--very-dark-gray);
+    font-weight: bold;
+}
+
+.loader-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+
+#map {
+    position: relative;
+    z-index: 1;
+    height: 75vh;
+}
+

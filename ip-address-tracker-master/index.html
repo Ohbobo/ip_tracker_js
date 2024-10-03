@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | IP Address Tracker</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    #map {
+            height: 75vh;
+            width: 100%;
+        }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <h1>IP Address Tracker</h1>
+        <form class="ip-form" action="">
+          <input class="search-input" type="text">
+          <button type="submit"><img src="/ip-address-tracker-master/images/icon-arrow.svg" alt=""></button>
+        </form>
+  
+      </nav>
+    </header>
+  
+    <section>
+      <section class="ip-informations"></section>
+      <div id="map"></div>
+    </section>
+  </div>
+
+  <script type="module" src="app.js"></script>
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</body>
+</html>
